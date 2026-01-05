@@ -45,7 +45,7 @@ class _DetailTaskPageState extends State<DetailTaskPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Card Detail Utama
+        
             Container(
               width: double.infinity,
               padding: const EdgeInsets.all(16),
@@ -90,7 +90,7 @@ class _DetailTaskPageState extends State<DetailTaskPage> {
             ),
             const SizedBox(height: 24),
             
-            // Section Penyelesaian
+        
             const Text("Penyelesaian", style: AppTextStyles.section),
             const SizedBox(height: 8),
             Container(
@@ -113,7 +113,7 @@ class _DetailTaskPageState extends State<DetailTaskPage> {
             ),
             const SizedBox(height: 24),
             
-            // Section Catatan
+          
             const Text("Catatan", style: AppTextStyles.section),
             const SizedBox(height: 8),
             TextField(

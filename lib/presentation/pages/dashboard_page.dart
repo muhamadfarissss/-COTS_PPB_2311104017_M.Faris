@@ -35,7 +35,7 @@ class _DashboardPageState extends State<DashboardPage> {
             return Center(child: CircularProgressIndicator());
           }
 
-          final displayedTasks = controller.tasks.take(5).toList();
+          final displayedTasks = controller.tasks.take(3).toList();
 
           return Column(
             children: [
@@ -61,7 +61,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       ),
                       SizedBox(height: 24),
 
-                      // Section Tugas Terdekat
+                  
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -80,7 +80,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       ),
                       SizedBox(height: 8),
 
-                      // List Tugas Custom
+                   
                       ...displayedTasks
                           .map((task) => _buildTaskCard(context, task))
                           .toList(),
@@ -89,7 +89,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 ),
               ),
 
-              // Tombol Tambah Tugas di Bawah (Fixed)
+          
               Container(
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
@@ -133,7 +133,7 @@ class _DashboardPageState extends State<DashboardPage> {
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: AppColors.border,
-          ), // Border tipis sesuai gambar
+          ), 
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -141,12 +141,12 @@ class _DashboardPageState extends State<DashboardPage> {
             Text(
               title,
               style: AppTextStyles.caption.copyWith(fontSize: 14),
-            ), // Font size caption agak besar dikit
+            ), 
             SizedBox(height: 4),
             Text(
               count,
               style: AppTextStyles.title.copyWith(fontSize: 32),
-            ), // Angka besar
+            ), 
           ],
         ),
       ),

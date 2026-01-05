@@ -12,9 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => TaskController()),
-      ],
+      providers: [ChangeNotifierProvider(create: (_) => TaskController())],
       child: MaterialApp(
         title: 'COTS App',
         theme: ThemeData(

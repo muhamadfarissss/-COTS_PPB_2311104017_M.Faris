@@ -24,7 +24,7 @@ class _DashboardPageState extends State<DashboardPage> {
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar: AppBar(
-        title: Text("Beranda", style: AppTextStyles.title),
+        title: Text("Tugas Besar", style: AppTextStyles.title),
         backgroundColor: Colors.white,
         elevation: 0,
         centerTitle: false,
@@ -35,8 +35,7 @@ class _DashboardPageState extends State<DashboardPage> {
             return Center(child: CircularProgressIndicator());
           }
 
-          // Ambil 3 tugas teratas untuk dashboard
-          final displayedTasks = controller.tasks.take(3).toList();
+          final displayedTasks = controller.tasks.take(5).toList();
 
           return Column(
             children: [
@@ -46,8 +45,6 @@ class _DashboardPageState extends State<DashboardPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Section Tugas Besar
-                      Text("Tugas Besar", style: AppTextStyles.title),
                       SizedBox(height: 16),
                       Row(
                         children: [
